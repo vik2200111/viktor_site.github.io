@@ -1,0 +1,861 @@
+@font-face {
+  font-family: 'SFPro';
+  src: url('Fonts/SFPro/SFProDisplay-Light.woff2') format('woff2'),
+       url('Fonts/SFPro/SFProDisplay-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+input[type=search]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=search]::-ms-reveal {  display: none; width : 0; height: 0; }
+
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+
+
+.shadow{
+	background: #FFFFFF; /* Цвет фона */
+    box-shadow: 0 0 20px rgba(0,0,0,0.32); /* Параметры тени */
+}
+.shadow-border{
+	background: #FFFFFF; /* Цвет фона */
+    box-shadow: 0 0 15px rgba(0,0,0,0.22); /* Параметры тени */
+}
+.shadow-logo{
+	box-shadow: 0px 0px 6px rgba(0,0,0,0.14);
+	border-radius: 125px;
+}
+body{
+	width: 1440px;
+	height: 1401px;
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+a:hover{
+	color: blue;
+}
+progress::-webkit-progress-bar{
+	background: lightgray;
+}
+progress::-webkit-progress-value{
+	background: #4640DE;
+	border-radius: 10px;
+}
+::-webkit-input-placeholder{
+	font-family: 'SFPro', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px; 
+	line-height: 21px; 
+	letter-spacing: -0.03em;
+	color: #646464;
+}
+
+input::-webkit-search-results-decoration {display: none;}
+
+.dropbtn {
+border: none;
+cursor: pointer;
+position: absolute;
+top: 13px;
+left: 1334px;
+width: 52px;
+height: 52px;
+}
+.dropdown {
+position: absolute;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.14);
+z-index: 1;
+top: 83px;
+left: 1110px;
+width: 276px;
+height: 265px;
+border-radius: 3px;
+overflow: hidden;
+}
+.dropdown-content a {
+color: black;
+padding: 10px 16px;
+text-decoration: none;
+display: block;
+}
+.show {display: block;}
+
+.dropcat {
+border: none;
+cursor: pointer;
+position: absolute;
+top: 100px;
+left: 517px;
+width: 109px;
+height: 40px;
+background-color: #4640DE; 
+border-radius: 4px;
+}
+.dropcatdown {
+position: absolute;
+display: inline-block;
+}
+.dropcatdown-content {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+overflow: auto;
+box-shadow: 0px 2px 14px rgba(0,0,0,0.15);
+z-index: 1;
+top: 159px;
+left: 54px;
+width: 1332px;
+height: 283px;
+border-radius: 4px;
+overflow: hidden;
+}
+.dropcatdown-content a {
+color: black;
+padding: 10px 16px;
+text-decoration: none;
+display: block;
+}
+.showcat {display: block;}
+
+.dropdown_profile{
+	position: absolute; top: 227.21px; left: 116px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 16px; letter-spacing: -0.03em; width: 45px; height: 24.09px; color: #4640DE; right: 115px; margin: 0; padding: 0;
+}
+.search_btn{
+	width: 14px; height: 14px; cursor: pointer; text-align: center; background: url(logo/search.png); background-repeat: no-repeat; color: #F2F2F2; padding: 5px; position: absolute; top: 15px; left: 422px; border: none; font-size: 18px;
+}
+
+
+/*all blocks and texts*/
+
+.logo1{
+	position: absolute; width: 55.07px; height: 17.59px; left: 54px; top: 32px;
+font-family: 'Inter', sans-serif; font-weight: bold;font-size: 22px; text-align: left;
+}
+.logo2{
+	position:absolute;width:5.88px;height: 5.88px;left:114.11px;top:33.32px;
+}
+.logo3{
+	position:absolute;width:5.88px;height: 5.88px;left:121.13px;top:33.32px;
+}
+.logo4{
+	position:absolute;width:5.88px;height:5.88px;left:114.11px;top:40.33px;
+}
+.logo5{
+	position:absolute;width:5.88px;height:5.88px;left:121.13px;top:40.33px;
+}
+.rm{
+	position: absolute; left: 16.94%; right: 74.51%; top: 31.18%; bottom: 38.46%; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px;
+}
+.tt{
+	position: absolute; left: 28.26%; right: 66.18%; top: 31.18%; bottom: 38.46%; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px;
+}
+.price{
+	position: absolute; left: 36.6%; right: 66.18%; top: 31.18%; bottom: 38.46%; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px;
+}
+.prj{
+	position: absolute; left: 42.85%; right: 53.07%; top: 31.18%; bottom: 38.46%; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px;
+}
+.catg{
+	position: absolute; left: 49.72%; right: 44.79%; top: 31.18%; bottom: 38.46%; font-family: 'Inter', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px;
+}
+.profile{
+	position: absolute; left: 1334px; top: 13px; right: 54px; bottom: 13px;
+}
+.div1{
+	position: absolute; border: solid 1px #EAEAEA; width: 276px; top: 90.68px;
+}
+.div2{
+	position: absolute; border: solid 1px #EAEAEA; width: 276px; top: 211.18px;
+}
+.div3{
+	position: absolute; top: 20.4px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bolder; font-size: 18px; line-height: 21px; 
+}
+.div4{
+	position: absolute; top: 48.51px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 18px; line-height: 21px; 
+}
+.div5{
+	position: absolute; top: 227.21px; left: 116px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: normal; font-size: 16px; letter-spacing: -0.03em; width: 45px; height: 24.09px; color: #4640DE; right: 115px; margin: 0; padding: 0;
+}
+.div6{
+	position: absolute; top: 112.76px; left: 25px;
+}
+.div7{	
+	font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
+}
+.div8{
+	position: absolute; top: 152.92px; left: 25px;
+}
+.div9{
+	font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 15px; line-height: 18px; font-weight: bold;
+}
+.div10{
+	position: absolute; border: solid 1px #EAEAEA; width: 1332px; left: 54px; top: 96px;
+}
+.div11{
+	position: absolute; border: solid 1px #EAEAEA; width: 1332px; left: 54px; top: 161px;
+}
+.div12{
+	position: absolute; left: 1151px; right: 237px; top: 119px; bottom: 1262px; font-family: 'SFPro', sans-serif; font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-style: normal; font-weight: bold;
+}
+.div13{
+	position: absolute; left: 1228px; right: 164px; top: 119px; bottom: 1262px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold;
+}
+.div14{
+	position: absolute; left: 1300px; right: 54px; top: 119px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold;
+}
+.div15{
+	position: absolute; background-color: #4640DE; border-radius: 4px;
+}
+.div16{
+	position: absolute; left: 24px; top: 10px;font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-style: normal; font-weight: normal; color: #FFFFFF; font-family: 'Maven Pro', sans-serif;
+}
+.div17{
+	position: absolute; top: 13px; left: 73px;
+}
+.div18{
+	position: absolute; top: 26px; left: 25px; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: 500; font-size: 18px; line-height: 21px; letter-spacing: -0.03em; font-weight: bolder;
+}
+.div19{
+	position: absolute; left: 18px; top: 61px; padding: 0; margin: 0; width: 130px; height: 63px;
+}
+.div20{
+	position: absolute; left: 25px; top: 126px; padding: 0; margin: 0; width: 100px; height: 49px;
+}
+.div21{
+	position: absolute; left: 151px; top: 65px; padding: 0; margin: 0; width: 135px; height: 49px;
+}
+.div22{
+	position: absolute; left: 135px; top: 126px; padding: 0; margin: 0; width: 96px; height: 49px;
+}
+.div23{
+	position: absolute; left: 296px; top: 65px; padding: 0; margin: 0; width: 111px; height: 49px;
+}
+.div24{
+	position: absolute; left: 241px; top: 126px; padding: 0; margin: 0; width: 119px; height: 49px;
+}
+.div25{
+	position: absolute; left: 370px; top: 126px; padding: 0; margin: 0; width: 125px; height: 49px;
+}
+.div26{
+	position: absolute; left: 417px; top: 65px; padding: 0; margin: 0; width: 140px; height: 49px;
+}
+.div27{
+	position: absolute; left: 505px; top: 126px; padding: 0; margin: 0; width: 116px; height: 49px;
+}
+.div28{
+	position: absolute; left: 567px; top: 65px; padding: 0; margin: 0; width: 94px; height: 49px;
+}
+.div29{
+	position: absolute; left: 631px; top: 126px; padding: 0; margin: 0; width: 113px; height: 49px;
+}
+.div30{
+	position: absolute; left: 671px; top: 65px; padding: 0; margin: 0; width: 88px; height: 49px;
+}
+.div31{
+	position: absolute; left: 754px; top: 126px; padding: 0; margin: 0; width: 105px; height: 59px;
+}
+.div32{
+	position: absolute; left: 769px; top: 65px; padding: 0; margin: 0; width: 127px; height: 49px;
+}
+.div33{
+	position: absolute; left: 869px; top: 126px; padding: 0; margin: 0; width: 130px; height: 63px;
+}
+.div34{
+	position: absolute; left: 906px; top: 65px; padding: 0; margin: 0; width: 130px; height: 63px;
+}
+.div35{
+	position: absolute; left: 1020px; top: 65px; padding: 0; margin: 0; width: 107px; height: 49px;
+}
+.div36{
+	position: absolute; left: 1137px; top: 65px; padding: 0; margin: 0; width: 130px; height: 63px;
+}
+.div37{
+	position: absolute; width: 455px; left: 54px; top: 108px; height: 40px;
+}
+.div38{
+	position: relative; display: flex; width: 100%;
+}
+.div39{
+	border: solid 3px #F2F2F2; background: #F2F2F2; border-radius: 4px; width: 100%; border-right: none; padding: 5px; height: 40px; outline: none;
+}
+.div40{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div41{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div42{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+}
+.div43{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div44{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969
+}
+.div45{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div46{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div47{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div48{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div49{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
+}
+.div50{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
+}
+.div51{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+}
+.div52{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div53{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div54{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
+}
+.div55{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div56{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div57{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div58{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div59{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div60{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div61{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
+}
+.div62{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+}
+.div63{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+}
+.div64{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div65{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div66{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 17.5px;line-height: 156.7%;top: 45px; text-align: justify-all;
+}
+.div67{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div68{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div69{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div70{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div71{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div72{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div73{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 38px; bottom: 21px; right: 324px;
+}
+.div74{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 180px; bottom: 21px; right: 308px;
+}
+.div75{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 320px; bottom: 21px; right: 56px;
+}
+.div76{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div77{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div78{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+}
+.div79{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div80{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div81{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div82{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div83{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div84{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div85{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 25px; bottom: 21px; right: 308px;
+}
+.div86{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 158px; bottom: 21px; right: 308px;
+}
+.div87{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+}
+.div88{
+	position: absolute; top: 781px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.div89{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div90{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div91{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all; width: 373px; height: 57px;
+}
+.div92{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div93{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div94{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
+}
+.div95{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
+}
+.div96{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696
+}
+.div97{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div98{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 45px; bottom: 21px; right: 308px;
+}
+.div99{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+}
+.div100{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+}
+.div101{
+	position: absolute; top: 245px; left: 25px; width: 385px; left: 13px; bottom: 294px; margin: 0; padding: 0;
+}
+.div102{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left;
+}
+.div103{	
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 18px;line-height: 156.7%;top: 45px; text-align: justify-all;
+}
+.div104{
+	position: absolute; left: 79px; top: 405px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div105{
+	position: absolute; left: 79px; top: 425px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div106{
+	position: absolute; left: 48px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div107{
+	position: absolute; left: 198px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div108{
+	position: absolute; left: 316px; top: 497px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div109{
+	position: absolute; width: 373px; height: 8px; left: 25px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div110{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 31px; bottom: 21px; right: 308px;
+}
+.div111{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 165px; bottom: 21px; right: 308px;
+}
+.div112{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 517px; left: 334px; bottom: 21px; right: 308px;
+}
+.div113{
+	position: absolute; left: 1172px; top: 211px; padding: 0; margin: 0; width: 135px; height: 40px;
+}
+.logo_company{
+	position: absolute; top: 403px;left: 25px; width: 40px; height: 40px;background: url('logo/logo.png'); background-position: center;
+}
+/*header*/
+.class_header{
+	width: 1440px; height: 78px; position: absolute; left: 0%; right: 0%; top: 0%; bottom: 0%; background: #FFFFFF;
+}
+/**********blocks*********/
+.class_cube{
+	position: absolute; top: 180px; left: 54px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_pills{
+	position: absolute; top: 180px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_peoples{
+	position: absolute; top: 180px; left: 963px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_house{
+	position: absolute; top: 781px; left: 54px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_city{
+	position: absolute; top: 781px; left: 509px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+.class_horses{
+	position: absolute; top: 781px; left: 963px; right: 963px; bottom: 647px; width: 423px; height: 574px; border-radius: 3px;
+}
+
+:root {
+	--width-header-mobile: 375px;
+	--width-div37-mobile: 339px;
+	--height-div37-mobile: 38px;
+	
+
+
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (device-width: 375px) {
+html{
+	width: 375px;
+	height: 2136px;
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 375px;
+	height: 2136px;
+	margin: 0;
+	padding: 0;
+}
+nav{display: none;}
+.logo1{
+	position: absolute;
+	left: 284px;
+	top: 21px;
+}
+.logo2{
+	position: absolute;
+	left: 344px;
+	top: 21px;
+}
+.logo3{
+	position: absolute;
+	left: 351px;
+	top: 21px;
+}
+.logo4{
+	position: absolute;
+	left: 344px;
+	top: 28px;
+}
+.logo5{
+	position: absolute;
+	left: 351px;
+	top: 28px;
+}
+.div10{display: none;}
+.div11{display: none;}
+.class_header{
+	width: var(--width-header-mobile); height: 60px; position: absolute; left: 0%; right: 0%; top: 0%; bottom: 0%; background: #F2F2F2;
+}
+.div37{
+	position: absolute;
+	border: solid 3px #F2F2F2; 
+	background: #F2F2F2; border-radius: 4px; 
+	width:var(--width-div37-mobile); border-right: none; padding: 5px; 
+	height: var(--height-div37-mobile); outline: none; 	
+	left: 14px;
+	top: 78px;
+}
+.div38{
+	position: relative; display: flex; width: 100%;
+}
+.search_btn{
+	width: 14px; height: 14px; cursor: pointer; text-align: center; background: url(logo/search.png); background-repeat: no-repeat; color: #F2F2F2; padding: 5px; position: absolute; top: 14px; left: 323px; border: none; font-size: 18px;
+}
+.div12{
+	position: absolute;
+	width: 46px;
+	height: 20px;
+	top: 210px;
+	left: 18px;
+}
+.div13{
+	position: absolute; left: 95px; top: 210px; font-family: 'SFPro', sans-serif; font-style: normal;font-weight: 500; font-size: 16px; line-height: 19px; letter-spacing: -0.03em; font-weight: bold; width: 46px; height: 20px;
+}
+.div14{
+	position: absolute;
+	top: 210px;
+	left: 175px;
+	width: 83px;
+	height: 20px;
+}
+.div77{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 112px; height: 27px; top: -50px;
+}
+.div78{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: -10px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div84{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div48{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div72{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 469px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div42{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: 20px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div41{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 241px; height: 36px; top: -50px;
+}
+.div79{
+	position: absolute; left: 90px; top: 358px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div80{
+	position: absolute; left: 90px; top: 381px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div81{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div82{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div83{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div85{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div86{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 126px; bottom: 21px; right: 308px;
+}
+.div87{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 271px; bottom: 21px; right: 308px;
+}
+.div49{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div50{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 126px; bottom: 21px; right: 308px;
+}
+.div51{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 271px; bottom: 21px; right: 308px;
+}
+.div45{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div46{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div47{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div43{
+	position: absolute; left: 90px; top: 358px; font-family: 'SFPro', sans-serif; font-size: 16px; line-height: 19px; color: #081531; font-weight: normal; font-style: normal;
+}
+.div44{
+	position: absolute; left: 90px; top: 381px; right: 283px; bottom: 133px; font-family: 'SFPro', sans-serif; font-size: 13px; line-height: 16px; font-style: normal; font-weight: normal; color: #969969;
+}
+.div48{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div72{
+	position: absolute; width: 303px; height: 8px; left: 18px; top: 435px;
+		border: solid 1px #D2D2D2;border-radius: 10px; background-color: #D2D2D2;
+}
+.div65{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: bold;font-size: 22px;line-height: 26px; text-align: left; width: 296px; height: 27px; top: -50px;
+}
+.div66{
+	position: absolute;font-family: 'SFPro', sans-serif;font-style: normal;font-weight: normal;font-size: 16px;line-height: 156.7%;top: 20px; text-align: justify-all; width: 303px; height: 76px;
+}
+.div69{
+	position: absolute; left: 34px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div70{
+	position: absolute; left: 157px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div71{
+	position: absolute; left: 255px; top: 476px; font-size: 14px; font-weight: 500; line-height: 137.7%; font-family: 'SFPro', sans-serif; font-style: normal; color: #969696;
+}
+.div73{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 18px; bottom: 21px; right: 308px;
+}
+.div74{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 136px; bottom: 21px; right: 308px;
+}
+.div75{
+	position: absolute; font-family: 'SFPro', sans-serif; font-style: normal; font-weight: bold; font-size: 26px; line-height: 137.7%; top: 497px; left: 256px; bottom: 21px; right: 308px;
+}
+.dropcat{
+border: none;
+cursor: pointer;
+position: absolute;
+top: 145px;
+left: 14px;
+width: 109px;
+height: 40px;
+background-color: #4640DE; 
+border-radius: 4px;
+}
+.class_cube{
+	position: absolute; top: 996px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_peoples{
+	position: absolute; top: 1551px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_house{
+	position: absolute; top: 441px; left: 18px; width: 339px; height: 541px; border-radius: 3px;
+}
+.class_city{
+	display: none;
+}
+.class_horses{
+	display: none;
+}
+.class_pills{
+	display: none;
+}
+.img_cube{
+	width: 100%;
+}
+.profile{
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+.dropbtn {
+border: none;
+cursor: pointer;
+position: absolute;
+top: 5px;
+left: 5px;
+width: 52px;
+height: 52px;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 2px 5px rgba(0,0,0,0.14);
+z-index: 1;
+top: 83px;
+left: 10px;
+width: 276px;
+height: 265px;
+border-radius: 3px;
+overflow: hidden;
+}
+.btn_bus{
+	background-image: url('images/bus.png');
+	position: absolute;
+	top: 246px;
+	left: 18px;
+	width: 167px;
+	height: 49px;
+}
+.btn_cre{
+	background-image: url('images/cre.png');
+	position: absolute;
+	top: 246px;
+	left: 190px;
+	width: 167px;
+	height: 49px;
+}
+.btn_com{
+	background-image: url('images/com.png');
+	position: absolute;
+	top: 307px;
+	left: 18px;
+	width: 167px;
+	height: 49px;
+}
+.logo_company{
+	position: absolute; top: 360px;left: 25px; width: 40px; height: 40px;background: url('logo/logo.png'); background-position: center;
+}
+.dropcatdown-content{
+	display: none;
+}
+.mcat{
+	background-image: url('images/mcat.png');
+	position: absolute;
+	top: 368px;
+	left: 18px;
+	width: 339px;
+	height: 40px;
+}
+.dropcatdown-content {
+display: none;
+position: absolute;
+background-color: #FFFFFF;
+overflow: auto;
+box-shadow: 0px 2px 14px rgba(0,0,0,0.15);
+z-index: 1;
+top: 413px;
+left: 18px;
+width: 339px;
+height: 295px;
+border-radius: 3px;
+overflow: hidden;
+}
+}

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="height=device-height">
+	<title>Boon</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="media/media-queries.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet"><!--аналог SF Pro display font-->
+	<link rel="stylesheet" href="css/Fonts/SFPro">
+	<script type="text/javascript" src="js/script.js"></script>
+	<meta name="viewport" content="width=375">
+	<meta name="viewport" content="user-scalable=yes">
+
+</head>
+<body>
+<header class="shadow class_header">
+
+<div class="logo1">
+<svg width="56" height="18" viewBox="0 0 56 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 0H8.1436C9.7546 0 11.0676 0.362475 12.0825 1.08742C13.1135 1.79626 13.6291 	2.87563 13.6291 4.32553C13.6291 5.13103 13.4196 5.84793 13.0008 6.47622C12.5819 7.0884 12.01 7.55559 11.2851 7.87779C13.3793 8.47386 14.4265 9.87542 14.4265 12.0825C14.4265 13.7096 13.8788 14.9742 12.7833 15.8764C11.6878 16.7624 10.2943 17.2055 8.60274 17.2055H0V0ZM3.67308 2.92396V6.95952H7.10451C9.00549 6.95952 9.95598 6.29095 9.95598 4.95382C9.95598 4.16443 9.69822 3.6328 9.1827 3.35893C8.66718 3.06895 7.97445 2.92396 7.10451 2.92396H3.67308ZM3.67308 9.521V14.209H7.46698C8.44969 14.209 9.22297 14.0479 9.78682 13.7257C10.3668 13.4035 10.6568 12.7833 10.6568 11.865C10.6568 10.9306 10.3507 10.3104 9.73849 10.0043C9.14242 9.68211 8.32081 9.521 7.27366 9.521H3.67308Z" fill="#323232"/>
+<path d="M21.8476 4.37386C23.7647 4.37386 25.3032 4.97799 26.4631 6.18624C27.6391 7.39449 28.2272 8.98938 28.2272 10.9709C28.2272 12.9685 27.6391 14.5715 26.4631 15.7797C25.3032 16.988 23.7486 17.5921 21.7993 17.5921C19.85 17.5921 18.2873 16.988 17.1113 15.7797C15.9352 14.5715 15.3472 12.9685 15.3472 10.9709C15.3472 8.98938 15.9433 7.39449 17.1354 6.18624C18.3276 4.97799 19.8983 4.37386 21.8476 4.37386ZM21.7509 6.98368C20.8327 6.98368 20.1077 7.3381 19.5761 8.04694C19.0445 8.75578 18.7787 9.73044 18.7787 10.9709C18.7787 12.2436 19.0445 13.2344 19.5761 13.9432C20.1077 14.652 20.8488 15.0065 21.7993 15.0065C22.7498 15.0065 23.4828 14.652 23.9983 13.9432C24.5299 13.2182 24.7957 12.2194 24.7957 10.9467C24.7957 9.70627 24.5219 8.73967 23.9741 8.04694C23.4425 7.3381 22.7014 6.98368 21.7509 6.98368Z" fill="#323232"/>
+<path d="M35.6537 4.37386C37.5708 4.37386 39.1093 4.97799 40.2693 6.18624C41.4453 7.39449 42.0333 8.98938 42.0333 10.9709C42.0333 12.9685 41.4453 14.5715 40.2693 15.7797C39.1093 16.988 37.5547 17.5921 35.6054 17.5921C33.6561 17.5921 32.0934 16.988 30.9174 15.7797C29.7414 14.5715 29.1534 12.9685 29.1534 10.9709C29.1534 8.98938 29.7494 7.39449 30.9416 6.18624C32.1337 4.97799 33.7044 4.37386 35.6537 4.37386ZM35.5571 6.98368C34.6388 6.98368 33.9139 7.3381 33.3822 8.04694C32.8506 8.75578 32.5848 9.73044 32.5848 10.9709C32.5848 12.2436 32.8506 13.2344 33.3822 13.9432C33.9139 14.652 34.6549 15.0065 35.6054 15.0065C36.5559 15.0065 37.2889 14.652 37.8044 13.9432C38.3361 13.2182 38.6019 12.2194 38.6019 10.9467C38.6019 9.70627 38.328 8.73967 37.7803 8.04694C37.2486 7.3381 36.5076 6.98368 35.5571 6.98368Z" fill="#323232"/>
+<path d="M55.0662 17.2055H51.5864V9.93181C51.5864 9.04576 51.4414 8.3772 51.1514 7.92612C50.8615 7.45893 50.2976 7.22533 49.4599 7.22533C47.6556 7.22533 46.7534 8.32081 46.7534 10.5118V17.2055H43.3461V4.73634H46.6084V6.47622C47.6395 5.09076 49.0169 4.39803 50.7406 4.39803C52.0778 4.39803 53.133 4.78467 53.9062 5.55795C54.6795 6.33123 55.0662 7.43476 55.0662 8.86855V17.2055Z" fill="#323232"/>
+</svg></div>
+
+<!--logo-->
+<div class="logo2">
+	<svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.112305 5.89729C0.112305 2.81566 2.61046 0.317505 5.6921 0.317505C5.85536 0.317505 5.98771 0.449858 5.98771 0.613123V5.11891C5.98771 5.71207 5.50687 6.19291 4.91371 6.19291H0.407923C0.244658 6.19291 0.112305 6.06056 0.112305 5.89729Z" fill="#4640DE"/>
+	</svg>
+</div>
+<div class="logo3">
+	<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.125732 1.39138C0.125732 0.79823 0.606578 0.317383 1.19973 0.317383H4.92714C5.52029 0.317383 6.00114 0.798229 6.00114 1.39138V5.11879C6.00114 5.71194 5.5203 6.19279 4.92714 6.19279H1.19973C0.60658 6.19279 0.125732 5.71195 0.125732 5.11879V1.39138Z" fill="#F7981D"/>
+	</svg>
+</div>
+<div class="logo4">
+	<svg width="6" height="7" viewBox="0 0 6 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.113281 1.40396C0.113281 0.810803 0.594127 0.329956 1.18728 0.329956H4.91469C5.50784 0.329956 5.98869 0.810802 5.98869 1.40396V5.13136C5.98869 5.72452 5.50784 6.20536 4.91469 6.20536H1.18728C0.594129 6.20536 0.113281 5.72452 0.113281 5.13137V1.40396Z" fill="#4640DE"/>
+	</svg>
+</div>
+<div class="logo5">
+	<svg width="7" height="7" viewBox="0 0 7 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<path d="M0.125732 1.40396C0.125732 0.810803 0.606578 0.329956 1.19973 0.329956H5.66299C5.84974 0.329956 6.00114 0.481352 6.00114 0.668109C6.00114 3.72625 3.52203 6.20536 0.463885 6.20536C0.277129 6.20536 0.125732 6.05397 0.125732 5.86721V1.40396Z" fill="#4640DE"/>
+	</svg>
+</div>
+
+<nav>
+	<p class="rm"><a href="/">Raise money for..</a></p>
+	<p class="tt"><a href="/">Take a tour</a></p>
+	<p class="price"><a href="/">Pricing</a></p>
+	<p class="prj"><a href="/">Projects</a></p>
+	<p class="catg"><a href="/">Categories</a></p>
+</nav>
+
+<div class="profile"><svg width="52" height="52" viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="26" cy="26" r="26" fill="#E1E6FF"/>
+<path d="M35.2549 28.9653C34.5258 28.3247 33.6416 27.7711 32.6266 27.3201C32.1927 27.1274 31.685 27.3228 31.4923 27.7565C31.2996 28.1902 31.495 28.698 31.9287 28.8908C32.7845 29.2712 33.522 29.7306 34.1204 30.2564C34.8581 30.9046 35.2812 31.8432 35.2812 32.832V34.4219C35.2812 34.8957 34.8957 35.2812 34.4219 35.2812H17.5781C17.1043 35.2812 16.7188 34.8957 16.7188 34.4219V32.832C16.7188 31.8432 17.1419 30.9046 17.8796 30.2564C18.7478 29.4934 21.2776 27.7188 26 27.7188C29.5065 27.7188 32.3594 24.8659 32.3594 21.3594C32.3594 17.8529 29.5065 15 26 15C22.4935 15 19.6406 17.8529 19.6406 21.3594C19.6406 23.4093 20.6158 25.2355 22.1264 26.3991C19.3623 27.0067 17.6429 28.1763 16.7451 28.9653C15.6361 29.9397 15 31.3489 15 32.832V34.4219C15 35.8435 16.1565 37 17.5781 37H34.4219C35.8435 37 37 35.8435 37 34.4219V32.832C37 31.3489 36.3639 29.9397 35.2549 28.9653ZM21.3594 21.3594C21.3594 18.8006 23.4412 16.7188 26 16.7188C28.5588 16.7188 30.6406 18.8006 30.6406 21.3594C30.6406 23.9182 28.5588 26 26 26C23.4412 26 21.3594 23.9182 21.3594 21.3594Z" fill="#4640DE"/>
+</svg>
+</div>
+
+<div class="dropdown">
+	<div onclick="myFunction()" class="dropbtn"></div>
+	<div id="myDropdown" class="dropdown-content">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<span class="div3">Username</span>
+		<span class="div4">example@mail.com</span>
+		<span href="#logout" class="dropdown_profile">Logout</span>
+		<a href="#projects" class="div6"><span class="div7">Favourite projects</span></a>
+		<a href="#settings" class="div8"><span class="div9">Profile settings</span></a>
+	</div>
+</div>
+
+</header>
+
+<div class="div10"></div>
+<div class="div11"></div>
+
+<a class="div12" href="/">Popular</a>
+<a class="div13" href="/">Recent</a>
+<a class="div14" href="/">Most funded</a>
+
+<div class="dropcatdown">
+	<div onclick="myFunctionCat()" class="dropcat">
+		
+		<div class="div16">Filters</div>
+			<div class="div17">
+				<svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M0.0717236 0.446254C0.200302 0.174348 0.480725 0 0.789484 0H14.2105C14.5193 0 14.7997 0.174348 14.9283 0.446254C15.0569 0.718161 15.01 1.03772 14.8083 1.126418L9.63158 7.07738V12.2353C9.63158 12.4993 9.49104 12.7445 9.2598 12.8842C9.02855 13.0239 8.7393 13.0381 8.49461 12.9219L5.81041 11.6474C5.53989 11.519 5.36842 11.2526 5.36842 10.9608V7.07738L0.191681 1.26418C-0.00998865 1.03772 -0.0568549 0.718161 0.0717236 0.446254ZM2.51306 1.52941L6.7557 6.29366C6.87935 6.43251 6.94737 6.60977 6.94737 6.79314V10.484L8.05263 11.0088V6.79314C8.05263 6.60977 8.12065 6.43251 8.2443 6.29366L12.4869 1.52941H2.51306Z" fill="white"/>
+				</svg>
+			</div>
+		</div>
+	</div>
+
+	<div id="myDropcatdown" class="dropcatdown-content">
+		<span class="div18">Categories</span>
+		<a href="#Business" class="div19"><img src="icons/bus.png"></a>
+		<a href="#Family" class="div20"><img src="icons/family.png"></a>
+		<a href="#Community" class="div21"><img src="icons/com.png"></a>
+		<a href="#Travel" class="div22"><img src="icons/travel.png"></a>
+		<a href="#Creative" class="div23"><img src="icons/cre.png"></a>
+		<a href="#Volunteer" class="div24"><img src="icons/vol.png"></a>
+		<a href="#Education" class="div25"><img src="icons/edu.png"></a>
+		<a href="#Competition" class="div26"><img src="icons/comp.png"></a>
+		<a href="#Nonprofit" class="div27"><img src="icons/non.png"></a>
+		<a href="#Event" class="div28"><img src="icons/event.png"></a>
+		<a href="#Animals" class="div29"><img src="icons/animals.png"></a>
+		<a href="#Faith" class="div30"><img src="icons/faith.png"></a>
+		<a href="#Medical" class="div31"><img src="icons/med.png"></a>
+		<a href="#Newlywed" class="div32"><img src="icons/newl.png"></a>
+		<a href="#Emergency" class="div33"><img src="icons/eme.png"></a>
+		<a href="#Sports" class="div34"><img src="icons/sports.png"></a>
+		<a href="#Wishes" class="div35"><img src="icons/wishes.png"></a>
+		<a href="#Memorial" class="div36"><img src="icons/mem.png"></a>
+		<a href="#Submit" class="div113"><img src="icons/submit.png"></a>
+	</div>
+
+</div>
+
+<div class="div37">
+	<div class="div38">
+		<input type="search" name="search" placeholder="Search for projects" class="div39">
+		<button type="submit" class="search_btn"></button>
+	</div>
+</div>
+<a href="/" class="btn_bus"></a>
+<a href="/" class="btn_cre"></a>
+<a href="/" class="btn_com"></a>
+<div class="mcat dropcatdown-content" id="myDropcatdown"></div>
+<!------------------------------Projects--------------------------------->
+
+<div class="shadow-border class_cube">
+	<img src="images/princube.png" class="img_cube">
+	<div class="div40">
+		<span class="div41">PrinCube-The World's Smallest</span>
+		<span class="div42">
+			The project team has begun turning their<br>prototype into the final product. Their ability to<br>ship the products may be affected by product..
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div43">Rockers Technology</span>
+		<span class="div44">Chicago,IL</span>
+	</div>
+	<span class="div45">funded</span>
+	<span class="div46">Goal</span>
+	<span class="div47">days left</span>
+	<progress value="2348" max="32800" class="div48"></progress>
+	<span class="div49">$2,348</span>
+	<span class="div50">$32,800</span>
+	<span class="div51">6</span>
+</div>
+
+
+
+<div class="shadow-border class_pills">
+	<img src="images/pills.png" class="img_cube">
+	<div class="div52">
+		<span class="div53">Help Me To Be A Doctor</span>
+		<span class="div54">
+			I'am a student looking for contribution to pay my
+			college fee. I live in Delhi India.
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div55">Haji Idrus</span>
+		<span class="div56">Delhi,In</span>
+	</div>
+	<span class="div57">funded</span>
+	<span class="div58">Goal</span>
+	<span class="div59">days left</span>
+	<progress value="23" max="3500" class="div60"></progress>
+	<span class="div61">$23</span>
+	<span class="div62">$3,500</span>
+	<span class="div63">32</span>
+</div>
+
+<div class="shadow-border class_peoples">
+	<img src="images/people.png" class="img_cube">
+	<div class="div64">
+		<span class="div65">Testing A New Campaign</span>
+		<span class="div66">
+			At this time to Coronavirus -COVID-19 - we currently are unable to supply kits (any kits claimed prior to March 18th will still be fulfilled).
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div43">Rockers Technology</span>
+		<span class="div44">Chicago,IL</span>
+	</div>
+	<span class="div69">funded</span>
+	<span class="div70">Goal</span>
+	<span class="div71">days left</span>
+	<progress value="546" max="640" class="div72"></progress>
+	<span class="div73">$546</span>
+	<span class="div74">$640</span>
+	<span class="div75">365</span>
+</div>
+
+<div class="shadow-border class_house">
+	<img src="images/white_house.png" class="img_cube">
+	<div class="div76">
+		<span class="div77">Real estate</span>
+		<span class="div78">
+			The project team has begun turning their prototype into final product. Their ability to ship the products may be affected by product..
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div79">Rockers Technology</span>
+		<span class="div80">Chicago,IL</span>
+	</div>
+	<span class="div81">funded</span>
+	<span class="div82">Goal</span>
+	<span class="div83">days left</span>
+	<progress value="2348" max="32800" class="div84"></progress>
+	<span class="div85">$2,348</span>
+	<span class="div86">$32,800</span>
+	<span class="div87">6</span>
+</div>
+
+<div class="shadow-border class_city">
+	<img src="images/city.png">
+	<div class="div89">
+		<span class="div90">Urban project
+		</span>
+		<span class="div91">
+			I'am a student looking for contribution to pay my
+			college fee. I live in Delhi India.
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div92">Haji Idrus</span>
+		<span class="div93">Delhi,In</span>
+	</div>
+	<span class="div94">funded</span>
+	<span class="div95">Goal</span>
+	<span class="div96">days left</span>
+	<progress value="23" max="3500" class="div97"></progress>
+	<span class="div98">$23</span>
+	<span class="div99">$3,500</span>
+	<span class="div100">32</span>
+</div>
+</div>
+
+<div class="shadow-border class_horses">
+	<img src="images/horses.png">
+	<div class="div101">
+		<span class="div102">PrinCube-The World's Smallest
+		</span>
+		<span class="div103">
+			The project team has begun turning their<br>prototype into the final product. Their ability to<br>ship the products may be affected by product..
+		</span>
+	</div>
+	<div class="shadow-logo logo_company">
+	</div>
+	<div>
+		<span class="div104">Haji Idrus</span>
+		<span class="div105">Delhi,In</span>
+	</div>
+	<span class="div106">funded</span>
+	<span class="div107">Goal</span>
+	<span class="div96">days left</span>
+	<progress value="2348" max="32800" class="div97">
+		</progress>
+	<span class="div110">$2,348</span>
+	<span class="div111">$32,800</span>
+	<span class="div112">6</span>
+</div>
+</div>
+
+
+<footer>
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
